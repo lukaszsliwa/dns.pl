@@ -1,5 +1,3 @@
-Checkout a repository https://github.com/lukaszsliwa/dns.pl or Github Page https://lukaszsliwa.github.io/dns.pl/
-
 # dns.pl
 ### Checking available domains from the input file
 
@@ -35,3 +33,10 @@ python3 api.py --domain abc.pl
 ```json
 {'apiResponse': {'errors': [], 'name': 'abc', 'results': {'abc.pl': 1}}, 'zonesCheck': [], 'domainParsed': {'container': {}, 'zoneStats': {}, 'lang': 'pl', 'domain': 'abc.pl', 'domainLabel': 'abc', 'domainParent': ['pl'], 'domainLabelMain': 'abc', 'secondLevelOwnedByNask': True, 'secondLevelIsGovPl': False, 'parsedArray': ['abc', 'pl'], 'notPl': False}}
 ```
+
+## Links
+
+* https://github.com/lukaszsliwa/dns.pl/wiki/DNS.pl-API-endpoint
+* https://dns.pl/
+* https://github.com/lukaszsliwa/dns.pl 
+* https://lukaszsliwa.github.io/dns.pl/
