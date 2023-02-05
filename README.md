@@ -9,7 +9,11 @@ python3 find.py --input domains.input --output domains.output
 
 `domains.output` should contains the results
 
-### Generate input file
+### Use pre-generated inputs
+
+See `inputs/` for more details.
+
+### Generate own input file
 
 You can generate input files using `generate.py`:
 
