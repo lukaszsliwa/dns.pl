@@ -1,3 +1,5 @@
+Checkout a repository https://github.com/lukaszsliwa/dns.pl or Github Page https://lukaszsliwa.github.io/dns.pl/
+
 # dns.pl
 ### Checking available domains from the input file
 
