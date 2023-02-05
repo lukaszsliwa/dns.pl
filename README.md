@@ -23,3 +23,13 @@ Add --list to set the list of characters:
 ```python
 python3 generate.py --tld pl --length 3 --output 3-domains.txt --list ab09
 ```
+
+### Calling for the specific domain data
+
+```python
+python3 api.py --domain abc.pl
+```
+
+```json
+{'apiResponse': {'errors': [], 'name': 'abc', 'results': {'abc.pl': 1}}, 'zonesCheck': [], 'domainParsed': {'container': {}, 'zoneStats': {}, 'lang': 'pl', 'domain': 'abc.pl', 'domainLabel': 'abc', 'domainParent': ['pl'], 'domainLabelMain': 'abc', 'secondLevelOwnedByNask': True, 'secondLevelIsGovPl': False, 'parsedArray': ['abc', 'pl'], 'notPl': False}}
+```
