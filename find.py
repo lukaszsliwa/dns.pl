@@ -8,7 +8,7 @@ URL = 'https://dns.pl/api/domain-browser'
 
 parser = argparse.ArgumentParser(description='Dns.pl')
 parser.add_argument('--input', default='domains.txt', help='Input file')
-parser.add_argument('--output', default='dns.txt', help='Output file')
+parser.add_argument('--output', default='result.txt', help='Output file')
 args = parser.parse_args()
 
 lst = list(string.ascii_lowercase)
@@ -40,7 +40,7 @@ with open(args.input, 'r') as input:
       if len(resp['apiResponse']['results']) == 0:
         print(not_available)
         output.write(f'{not_available}\n')
-      elif int(resp['apiResponse']['results'][domain]) == 0:
+      elif domain in resp['apiResponse']['results'] and int(resp['apiResponse']['results'][domain]) == 0:
         print(available)
         output.write(f'{available}\n')
       else:

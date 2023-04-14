@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+while [ True ]
+do
+   docker compose down --remove-orphans
+   docker compose up -d
+   sleep 30
+done

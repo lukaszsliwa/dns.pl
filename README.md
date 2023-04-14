@@ -38,6 +38,16 @@ python3 api.py --domain abc.pl
 {'apiResponse': {'errors': [], 'name': 'abc', 'results': {'abc.pl': 1}}, 'zonesCheck': [], 'domainParsed': {'container': {}, 'zoneStats': {}, 'lang': 'pl', 'domain': 'abc.pl', 'domainLabel': 'abc', 'domainParent': ['pl'], 'domainLabelMain': 'abc', 'secondLevelOwnedByNask': True, 'secondLevelIsGovPl': False, 'parsedArray': ['abc', 'pl'], 'notPl': False}}
 ```
 
+## Sending API calls through VPN
+
+Please build a list of domains and copy to `./input` file. Then call:
+
+```shell
+docker compose up
+```
+
+The result should appear in `./output` file.
+
 ## Links
 
 * https://github.com/lukaszsliwa/dns.pl/wiki/DNS.pl-API-endpoint
